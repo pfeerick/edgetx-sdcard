@@ -1,6 +1,7 @@
 #!/bin/bash
 
 mkdir dist
+
 cp index.json dist/
 cp -r sdcard sdcard-build
 
