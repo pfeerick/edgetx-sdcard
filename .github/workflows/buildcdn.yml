@@ -62,6 +62,10 @@ jobs:
     needs: prepare-release
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/download-artifact@master
+        with:
+          name: sdcard-latest
+          path: .
       - name: Deploy release
         uses: marvinpinto/action-automatic-releases@latest
         with:
